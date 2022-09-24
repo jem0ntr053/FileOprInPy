@@ -1,3 +1,10 @@
+# Python comment header with author and date information
+# Name: main.py
+# Date: 2019-01-22
+# Author: Jonathan Montrose
+# Version: 1.0
+###############################################
+
 # a1p1 takes the name of a file as input,
 # accesses the file, and prints the files title to the output.
 def a1p1():
@@ -28,24 +35,13 @@ def a1p2():
             for item in rev_str:
                 f2.write("%s\n" % item)
 
-    # Read names from file2 and reverse them again,
-    #  then print them to the screen.
+    # Read names from file2 and reverse them again,then print them to the screen
     with open('file2.txt', 'r') as f:
         names = f.read().split()
         rev_str = [i[::-1] for i in names]
         rev_str.sort()
         for item in rev_str:
             print("%s" % item)
-
-    # f2 = open("file2.txt", "r")
-    # file2 = f2.read().split()
-    # for i in file2:
-    #     file2 = [i[::-1]]
-    #     file2.sort()
-    #     for item in file2:
-    #         print(item)
-    #
-    # f2.close()
 
 
 if __name__ == '__main__':
